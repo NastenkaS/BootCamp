@@ -1,0 +1,314 @@
+﻿/* Main elements of the page */
+
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+
+    /*color for background*/
+    background-color: #fff4d6;
+}
+
+#main_wrapper {
+    width: 900px;
+
+    /*create space around elements, a browser will calculate it*/
+    margin: auto;
+}
+
+
+/* Header */
+#main_title span {
+    font-size: 35px;
+    font-weight: 600;
+}
+#main_title div {
+    font-size: 16px;
+}
+
+header nav {
+    /*indentations*/
+    margin: 0 0 20px 0;
+    padding-bottom: 10px;
+
+    /*adding a line below*/
+    background: url("images/line.png") left bottom repeat-x;
+
+}
+
+header nav ul {
+    /*setting type of element*/
+    display: flex;
+
+    /*Items are positioned at the end of the container*/
+    justify-content: flex-end;
+    margin: 0;
+}
+
+header nav ul li {
+    /*deleting list-items markers*/
+    list-style: none;
+
+    /*indent on the left side*/
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    /*deleting link's underline*/
+    text-decoration: none;
+
+    /*making text in uppercase*/
+    text-transform: uppercase;
+
+    color: black;
+    font-size: 20px;
+}
+
+
+/* Banner */
+#banner_image {
+    /*adding rounding*/
+    border-radius: 6px;
+        /*and hiding everything out of container*/
+    overflow: hidden;
+
+    /*adding postion for parent*/
+    position: relative;
+
+    /*shadow for container*/
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.52);
+}
+
+#banner_image img {
+
+    /*setting type of element*/
+    display: block;
+}
+
+#banner_image div {
+    /*adding color and size to text inside */
+    color: white;
+    font-size: 12px;
+
+    /*adding indentations*/
+    padding: 20px 0px 20px 10px;
+
+    /*painting semitransparent*/
+    background: rgba(0, 0, 0, .5);
+
+    /*changing position of element, it should be above the image*/
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#banner_image a {
+    /*setting type of element*/
+    display: block;
+
+    /*deleting link's underline*/
+    text-decoration: none;
+
+    /*background's gradient and text's color*/
+    background: url("images/small_arrow.png") right 8px center no-repeat, url("images/red_background.png") left top repeat;
+    color: white;
+
+    /*color of link's border*/
+    border: 1px solid #7c0909;
+
+    /*rounding*/
+    border-radius: 4px;
+
+    /*adding indentations inside*/
+    padding: 5px 20px 5px 12px;
+
+    /*changing position of element, it should be above the image, on the right side of the text*/
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+   
+}
+
+/* Body */
+section {
+    /*adding line below*/
+    background: url("images/line.png") left bottom repeat-x;
+    /*indent below*/
+    padding-bottom: 10px;
+    
+
+}
+
+section h1 {
+    /*making text in uppercase*/
+    text-transform: uppercase;
+
+    /*deleting text in bold*/
+    font-weight: normal;
+
+    /*size*/
+    font-size: 22px;
+
+    /*adding indent inside on the left side in oder to place there an image*/
+    padding: 12px 50px;
+
+    /*indents outside*/
+    margin: 40px 0 0;
+
+    /*adding an image on background and placing it on the left side*/
+    background: url("images/pin.png") left center no-repeat;
+}
+
+section article {
+    width: 600px;
+
+    display: inline-block;
+    vertical-align: top;
+    
+}
+
+section article p {
+    margin: 10px 0;
+    text-align: justify;
+}
+
+section aside {
+    display:inline-block;
+    vertical-align: top;
+    margin: 35px 0 0 25px;
+
+    width: 270px;
+    background: #706b64;
+
+    /*indents are a part of an elemt size*/
+    box-sizing: border-box;
+    padding: 10px;
+
+    /*adding rounding*/
+    border-radius: 5px;
+
+    /*shadow for container*/
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.52);
+
+    /*adding postion for parent, there will be position:absolute for  "section aside::before" */
+    position: relative;
+
+}
+
+/*adding pseudo-element for arrow*/
+section aside::before {
+    content: url("images/arrow.png");
+    width: 10px;
+    height: 10px;
+
+    /*adding a position */
+    position: absolute;
+    left: -12px;
+    top: 70px;
+}
+
+section aside h2 {
+    color: white;
+    font-size: 20px;
+
+    /*deleting text in bold*/
+    font-weight: normal;
+
+    /*making text in uppercase*/
+    text-transform: uppercase;
+}
+
+/*style will work for first element in a row*/
+section aside > img {
+    /*setting type of element*/
+    display: block;
+
+    /*center align and adding indent below*/
+    margin: 10px auto 20px;
+
+    border: 1px solid black;
+}
+
+section aside p {
+    color: white;
+    text-align: justify;
+}
+
+section > img {
+
+    /*center aling acc Х-axis and moving it down acc Y-axis*/
+    margin: 0 auto -36px;
+    display:block;
+}
+
+/* Footer */
+footer {
+    /*setting type of element*/
+    display: flex;
+    /*childrens will take all the widht of parent*/
+    Justify-content: space-between;
+
+    /*indent above*/
+    margin: 30px 0 20px;
+}
+
+footer h2 {
+    /*size*/
+    font-size: 18px;
+
+    /*deleting text in bold*/
+    font-weight: normal;
+
+    /*making text in uppercase*/
+    text-transform: uppercase;
+}
+
+#tweet {
+    /*wight of container regarding possible width*/
+    flex-grow: 1;
+
+}
+
+#tweet div {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+#my_pictures {
+    /*wight of container regarding possible width*/
+    flex-grow: 1;
+}
+
+#my_pictures img {
+    /*adding black border for image*/
+    border: 1px solid black;
+}
+
+#my_friends {
+    /*wight of container regarding possible width*/
+    flex-grow: 2;
+}
+
+#my_friends ul {
+    padding-left: 0;
+
+    /*dividing list to 2 columns*/
+    column-count: 2;
+
+    /*line spacing*/
+    line-height: 14px;
+}
+
+#my_friends ul li {
+    /*deleting list-marks*/
+    list-style-image: url("images/external_link.png");
+
+}
+
+#my_friends ul li a {
+    /*deleting underlines for links*/
+    text-decoration: none;
+
+    font-size: 12px;
+    color: #7c0909;
+
+}

@@ -1,0 +1,155 @@
+<!-- Hint: doplnujte jen do vykomentovanych sekci -->
+<!DOCTYPE html>
+<html>
+<!-- head tag -->
+<head>
+    <!-- defines a title in the browser tab -->
+    <title>Zozor - Travel diaries</title>
+    <!-- connect with CSS -->
+    <link href="style.css" rel="stylesheet">    
+    <script>
+        window.onload = function(){
+        var textChange = document.querySelector("#tweet h2");
+        textChange.textContent = "MY LAST POST";
+
+        var colorChange = document.querySelectorAll("#my_friends ul li a");
+        colorChange.forEach(function(elem){
+            elem.style.color = 'green'
+        })}
+    </script>
+</head>
+<body>
+<div id="main_wrapper">
+    <header>
+
+        <div id="main_title">
+            <!-- logo etc. -->
+            <img src="images/zozor_logo.png" alt="logotype"/>
+            <span>Zozor</span>
+            <div>Travel diaries</div>
+        </div>
+
+        <nav>
+            <!-- navigation menu -->
+            <!-- list of links -->
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">resume</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div id="banner_image">
+        <!-- banner -->
+        <img src="images/sanfrancisco.jpg" alt="banner_image"/>
+        <!-- text -->
+        <div>Reflection on my holiday in the United States...</div>
+        <!-- link -->
+        <a href="#" title="See article">See article</a>
+    </div>
+
+    <section>
+        <!-- adding a headding -->
+<h1>i'm a great traveller</h1>
+        <article>
+            
+            <!-- article -->
+            <!-- adding paragraph for text -->
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec sagittis massa. Nulla facilisi.
+                Cras id arcu lorem, et semper purus. Cum sociis natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus. Duis vel enim mi, in lobortis sem. Vestibulum luctus elit eu libero ultrices id
+                fermentum sem sagittis. Nulla imperdiet mauris sed sapien dignissim id aliquam est aliquam. Maecenas non
+                odio ipsum, a elementum nisi. Mauris non erat eu erat placerat convallis. Mauris in pretium urna. Cras
+                laoreet molestie odio, consequat consequat velit commodo eu. Integer vitae lectus ac nunc posuere
+                pellentesque non at eros. Suspendisse non lectus lorem.
+            </p>
+            <!-- adding paragraph for text -->
+            <p>
+                Vivamus sed libero nec mauris pulvinar facilisis ut non sem. Quisque mollis ullamcorper diam vel
+                faucibus. Vestibulum sollicitudin facilisis feugiat. Nulla euismod sodales hendrerit. Donec quis orci
+                arcu. Vivamus fermentum magna a erat ullamcorper dignissim pretium nunc aliquam. Aenean pulvinar
+                condimentum enim a dignissim. Vivamus sit amet lectus at ante adipiscing adipiscing eget vitae felis. In
+                at fringilla est. Cras id velit ut magna rutrum commodo. Etiam ut scelerisque purus. Duis risus elit,
+                venenatis vel rutrum in, imperdiet in quam. Sed vestibulum, libero ut bibendum consectetur, eros ipsum
+                ultrices nisl, in rutrum diam augue non tortor. Fusce nec massa et risus dapibus aliquam vitae nec diam.
+            </p>
+            <!-- adding paragraph for text -->
+            <p>
+                Phasellus ligula massa, congue ac vulputate non, dignissim at augue. Sed auctor fringilla quam quis
+                porttitor. Praesent vitae dignissim magna. Pellentesque quis sem purus, vel elementum mi. Pellentesque
+                habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas consectetur
+                euismod urna. In hac habitasse platea dictumst. Quisque tincidunt porttitor vestibulum. Ut iaculis,
+                lacus at molestie lacinia, ipsum mi adipiscing ligula, vel mollis sem risus eu lectus. Nunc elit quam,
+                rutrum ut dignissim sit amet, egestas at sem.
+            </p>
+        </article>
+
+        <aside>
+            <!-- aside -->
+            <h2>About the author</h2>
+
+            <img src="images/zozor.png" alt="zozor"/>
+
+            <p>Let me introduce myself. My name's Zozor. I was born on 23 Nonember 2005.</p>
+            <p>A bit meager. Is it not? This is why I've now decided to write my biography to let my readers know who I really am.</p>
+
+            <a href="#"><img src="images/facebook.png" alt="facebook"/></a>
+            <a href="#"><img src="images/twitter.png" alt="twitter"/></a>
+            <a href="#"><img src="images/vimeo.png" alt="vimeo"/></a>
+            <a href="#"><img src="images/flickr.png" alt="flickr"/></a>
+            <a href="#"><img src="images/rss.png" alt="rss"/></a>
+
+        </aside>
+
+        <!-- adding an errow as an image -->
+        <img src="images/top.png" alt="top"/>
+    </section>
+
+    <footer>
+        <div id="tweet">
+
+            <!-- my last tweet -->
+            <h2>my last tweet</h2>
+            <div>Hee-haw!</div>
+            <div>12/05 23:12</div>
+
+        </div>
+
+        <div id="my_pictures">
+
+            <!-- my pictures -->
+            <h2>my pictures</h2>
+            <img src="images/pic1.jpg"/>
+            <img src="images/pic2.jpg"/>
+            <img src="images/pic3.jpg"/>
+            <img src="images/pic4.jpg"/>
+
+        </div>
+
+        <div id="my_friends">
+
+            <!-- my friends -->
+            <h2>my friends</h2>
+
+            <!-- list of links -->
+            <ul>
+                <li><a href="#">Pupi the rabbit</a></li>
+                <li><a href="#">Mr Baobab</a></li>
+                <li><a href="#">Kaiwaii</a></li>
+                <li><a href="#">Perceval.eu</a></li>
+                <li><a href="#">Ji</a></li>
+                <li><a href="#">Super Cucumber</a></li>
+                <li><a href="#">Prince</a></li>
+                <li><a href="#">Mr Fan</a></li>
+            </ul>
+
+        </div>
+    </footer>
+
+</div>
+</body>
+</html>
