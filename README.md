@@ -1,8 +1,8 @@
 # [Jenkins](http://testlab.tesena.com:8080/job/TechnicalSkills_AnastassiyaSkrabets/) link
-## V tomto readme 
-###### je info o BootCamp
+## V teto repozitory
+###### jsou materialy ke kazdemu okruhu v prislusne slozce
 
-**This is bold text**
+**Odkaz na video s prezentaci je tady https://tesena-my.sharepoint.com/:v:/p/anastassiya_skrabets/ET-01yjOGWpKgWYh0Vj1-QUBuCInZx5DQkgIqUubqvAZ1g?e=0NpiZu**
 
 *This text is italicized*
 
